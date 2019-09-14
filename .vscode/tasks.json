@@ -10,10 +10,10 @@
             "args": [
             "-std=c11",
             //"-stdlib=libc++",
-            "${workspaceFolder}/Examples/item_main.c",
+            "${workspaceFolder}/Examples/ItemExample/item_main.c",
             "${workspaceFolder}/DataStructures/Item/item.c",
             "-o",
-            "${workspaceFolder}/Build/item_main.out",
+            "${workspaceFolder}/Examples/ItemExample/Build/item_main.out",
             "--debug"
             ],
             "group": {

@@ -10,7 +10,7 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Build/item_main.out",
+            "program": "${workspaceFolder}/Examples/ItemExample/Build/item_main.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
