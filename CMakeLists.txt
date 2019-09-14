@@ -3,4 +3,5 @@ project(turbo-utils VERSION 0.0.0)
 
 add_subdirectory(DataStructures/)
 add_subdirectory(Examples/)
+add_subdirectory(Tests/)
 
