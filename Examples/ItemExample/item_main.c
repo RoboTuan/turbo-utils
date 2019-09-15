@@ -9,13 +9,13 @@ int main(void) {
 
     size_t size = sizeof(vett);
 
-    pItem elem = readItem(&vett, size, stdin);
-    
-    printf("%p\n", elem);
+    pItem elem = readItem(&vett, size, "yolo");
     
     printItem(elem);
     
-    destroyItem(elem);
+    destroyItem(&elem);
+
+    itemCheckVoid(elem);
     
     printItem(elem);
 

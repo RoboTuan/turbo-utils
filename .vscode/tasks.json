@@ -13,7 +13,7 @@
             "${workspaceFolder}/Examples/ItemExample/item_main.c",
             "${workspaceFolder}/DataStructures/Item/item.c",
             "-o",
-            "${workspaceFolder}/Examples/ItemExample/Build/item_main.out",
+            "${workspaceFolder}/Build/Examples/ItemExample/item_main",
             "--debug"
             ],
             "group": {
