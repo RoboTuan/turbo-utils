@@ -6,7 +6,7 @@
 #include "../../DataStructures/Item/item.h"
 
 int main(void){
-    pItem elem1, elem2, elemVoid;
+    pItem elem1, elem2, elemVoid = NULL;
     int vett_int[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     char vett_char[] = "home";
     char name1[] = "Integer vector";

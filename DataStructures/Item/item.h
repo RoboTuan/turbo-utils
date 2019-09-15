@@ -9,15 +9,15 @@
 typedef struct item *pItem;
 typedef char *pKey;
 
-pItem createItem(size_t dataSize);
-
 // Passing a pointer to pItem (pointer to pointer to the struct item)
-// so that itemSetVoid can be used inside destroyItem (see below)
+// so that itemSetVoid can be used inside destroyItem (see below)_
+// It destroys both the item and the data but the client has to 
+// put his "void *data" to null after the destruction for better security
 void destroyItem(pItem *element);
 
 pItem readItem(void *inputData, size_t dataSize, const char* string);
 
-void printItem(pItem element);
+//void printItem(pItem element);
 void printKey(pKey k);
 void *getData(pItem element);
 

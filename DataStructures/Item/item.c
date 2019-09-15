@@ -13,6 +13,9 @@
 // 30 + 1 for the terminator character '\0'
 #define MAX_NAME 30 + 1
 
+// Function hidden to the client
+pItem createItem(size_t dataSize);
+
 struct item{
     char name[MAX_NAME];
     void *data;
@@ -70,7 +73,7 @@ void destroyItem(pItem *element){
 
     if ((*element)->name[0] != '\0'){
         // resetting element->name
-        memset((*element)->name,0,sizeof((*element)->name));
+        memset((*element)->name,'\0',sizeof((*element)->name));
     }
     free((*element));
     // Passing a pointer to pItem (pointer to pointer to the struct item)
@@ -93,7 +96,7 @@ void itemSetVoid(pItem *element){
 }
 
 
-void printItem(pItem element){
+/*void printItem(pItem element){
     int i;
     int *value;
     printKey(element->name);
@@ -102,7 +105,7 @@ void printItem(pItem element){
         value = ((int *)(element->data)) + i;
         printf("%d\n",*value);
     }
-}
+}*/
 
 pKey getKey(pItem element){
     return element->name;
@@ -117,5 +120,7 @@ int keycmp(pKey k1, pKey k2){
 }
 
 void *getData(pItem element){
-    return element->data;
+    // return &(*element)->data if getData is
+    // defined as " void **getData(pItem *element)"
+    return (element)->data;
 }
