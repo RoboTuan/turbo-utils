@@ -67,7 +67,6 @@ _deps
 # Mac
 .DS_Store
 
-
 # VsCode
 .vscode/*
 !.vscode/settings.json

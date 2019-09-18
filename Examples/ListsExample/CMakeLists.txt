@@ -1,2 +1,2 @@
-add_executable(lists_example lists_example.c)
-target_link_libraries(lists_example PRIVATE DataStructures)
+add_executable(lists_example.o lists_example.c)
+target_link_libraries(lists_example.o PRIVATE DataStructures)
