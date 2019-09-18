@@ -111,12 +111,13 @@ pKey getKey(pItem element){
     return element->name;
 }
 
+// Prints the key (name);
 void printKey(pKey k){
-    printf("%s\n",k);
+    printf("The key is: %s\n",k);
 }
 
 int keycmp(pKey k1, pKey k2){
-    return strcmp(k1,k2);
+    return strcmp((char *)k1, (char *)k2);
 }
 
 void *getData(pItem element){
